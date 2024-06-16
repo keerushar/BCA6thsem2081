@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">BCA6thSem</string>
+
+    <string-array name="state_name">
+        <item>Province 1</item>
+        <item>Madhesh Pradesh</item>
+        <item>Bagmati Province</item>
+        <item>Gandaki</item>
+        <item>Lumbini</item>
+        <item>Karnali</item>
+        <item>Sudurpaschim</item>
+    </string-array>
 </resources>
