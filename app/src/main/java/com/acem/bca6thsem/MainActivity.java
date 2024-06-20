@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,21 +19,14 @@ public class MainActivity extends AppCompatActivity {
         Button loginBtn = findViewById(R.id.loginBtn);
         EditText emailEt = findViewById(R.id.emailEt);
 
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(
-                        MainActivity.this, DashboardActivity.class);
-                startActivity(i);
-            }
+        loginBtn.setOnClickListener(v -> {
+            Intent i = new Intent(MainActivity.this, DashboardActivity.class);
+            startActivity(i);
         });
 
-        emailEt.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                Log.d("Long press" , "Long Btn pressed");
-                return false;
-            }
+        emailEt.setOnFocusChangeListener((v, hasFocus) -> {
+            Log.d("Focus change", "Focus has been changed");
+            Toast.makeText(MainActivity.this, "Focus change", Toast.LENGTH_SHORT).show();
         });
     }
 }
