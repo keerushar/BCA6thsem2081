@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
@@ -13,6 +14,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import org.w3c.dom.Text;
+
 public class DashboardActivity extends AppCompatActivity {
 
     @Override
@@ -20,9 +23,17 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_dashboard);
-        Log.d("Activity LifeCycle", "On Create");
 
         Button button = findViewById(R.id.navigateBtn);
+
+        TextView emailTv = findViewById(R.id.emailTv);
+
+        TextView passwordTv = findViewById(R.id.passwordTv);
+
+        emailTv.setText(getIntent().getStringExtra("email"));
+        passwordTv.setText(getIntent().getStringExtra("password"));
+
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

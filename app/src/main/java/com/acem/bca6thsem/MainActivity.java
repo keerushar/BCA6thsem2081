@@ -18,15 +18,16 @@ public class MainActivity extends AppCompatActivity {
 
         Button loginBtn = findViewById(R.id.loginBtn);
         EditText emailEt = findViewById(R.id.emailEt);
+        EditText passwordEt = findViewById(R.id.passwordEt);
 
         loginBtn.setOnClickListener(v -> {
             Intent i = new Intent(MainActivity.this, DashboardActivity.class);
-            startActivity(i);
-        });
+            String email = emailEt.getText().toString();
+            String password = passwordEt.getText().toString();
 
-        emailEt.setOnFocusChangeListener((v, hasFocus) -> {
-            Log.d("Focus change", "Focus has been changed");
-            Toast.makeText(MainActivity.this, "Focus change", Toast.LENGTH_SHORT).show();
+            i.putExtra("email", email);
+            i.putExtra("password", password);
+            startActivity(i);
         });
     }
 }
