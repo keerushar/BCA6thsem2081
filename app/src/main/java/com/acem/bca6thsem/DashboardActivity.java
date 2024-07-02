@@ -36,10 +36,13 @@ public class DashboardActivity extends AppCompatActivity {
 
 
         button.setOnClickListener(new View.OnClickListener() {
+            String data = "Navigate back";
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(DashboardActivity.this, HomePageActivity.class);
-                startActivity(i);
+                Intent i = new Intent();
+                i.putExtra("data", data);
+                setResult(4, i);
+                finish();
             }
         });
     }
