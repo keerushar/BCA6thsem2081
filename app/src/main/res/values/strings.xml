@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">BCA6thSem</string>
+    <string name="app_name">Nice Application</string>
+    <string name="login">Login</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
 </resources>
