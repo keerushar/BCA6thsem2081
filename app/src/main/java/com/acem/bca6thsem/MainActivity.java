@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
            TextView loginTv = findViewById(R.id.loginTv);
 
            loginTv.setText(dataExtract);
-
         }
     }
 }
