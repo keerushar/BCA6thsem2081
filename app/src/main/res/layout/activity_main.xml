@@ -5,28 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="3"
     tools:context=".MainActivity">
 
     <fragment
         android:name="com.acem.bca6thsem.FirstFragment"
         android:id="@+id/fragment_first"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
-
-    <fragment
-        android:name="com.acem.bca6thsem.SecondFragment"
-        android:id="@+id/fragment_second"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
-
-    <fragment
-        android:name="com.acem.bca6thsem.FirstFragment"
-        android:id="@+id/fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_height="match_parent" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
