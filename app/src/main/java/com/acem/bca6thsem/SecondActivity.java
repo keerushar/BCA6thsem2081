@@ -43,7 +43,6 @@ public class SecondActivity extends AppCompatActivity {
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.replace(R.id.fragment, fragment);
                 transaction.commit();
-
             }
         });
     }
