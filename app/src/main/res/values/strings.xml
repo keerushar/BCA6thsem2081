@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">BCA6thSem</string>
+
+    <string-array name="places">
+        <item>Pokhara</item>
+        <item>Kathmandu</item>
+        <item>Dharan</item>
+        <item>Pokhara</item>
+        <item>Pokhara</item>
+        <item>Pokhara</item>
+        <item>Pokhara</item>
+        <item>Pokhara</item>
+        <item>Pokhara</item>
+
+    </string-array>
 </resources>
