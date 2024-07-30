@@ -11,22 +11,22 @@
         android:id="@+id/titleTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Grid View Examples"
         android:textColor="@color/black"
-        android:layout_marginTop="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <GridView
-        android:id="@+id/listView"
+        android:id="@+id/gridView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:entries="@array/places"
-        app:layout_constraintStart_toStartOf="parent"
+        android:numColumns="3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleTv"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
