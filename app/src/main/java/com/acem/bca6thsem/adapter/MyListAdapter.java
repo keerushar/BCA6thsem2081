@@ -1,4 +1,4 @@
-package com.acem.bca6thsem;
+package com.acem.bca6thsem.adapter;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.acem.bca6thsem.R;
 
 public class MyListAdapter extends ArrayAdapter<String> {
   Activity context;

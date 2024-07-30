@@ -2,19 +2,11 @@ package com.acem.bca6thsem;
 
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
+import com.acem.bca6thsem.adapter.MyListAdapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.View;
 import android.widget.ListView;
-
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.acem.bca6thsem.databinding.ActivityCustomListBinding;
 
 public class CustomListActivity extends AppCompatActivity {
 
