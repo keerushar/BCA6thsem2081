@@ -23,4 +23,14 @@ public class MyData {
     public int getId(){
         return id;
     }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
 }
