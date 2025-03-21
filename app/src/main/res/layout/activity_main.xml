@@ -6,14 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/contextMenuBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Context Menu "
+        app:layout_constraintBottom_toTopOf="@id/titleTxt" />
+
     <TextView
         android:id="@+id/titleTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="com.acem.bca6thsem.SecondFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/secondFragment"/>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="com.acem.bca6thsem.FirstFragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstFragment"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
