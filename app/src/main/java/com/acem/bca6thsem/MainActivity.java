@@ -24,14 +24,22 @@ public class MainActivity extends AppCompatActivity {
 
         contextMenuBtn = findViewById(R.id.contextMenuBtn);
 
-        registerForContextMenu(contextMenuBtn);
 
-        contextMenuBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openContextMenu(view);
-            }
-        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     @Override
@@ -48,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
 //        inflater.inflate(R.menu.my_menu, menu);
 //        return true;
 //    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
