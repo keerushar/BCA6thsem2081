@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn.setOnClickListener(MainActivity.this);
     }
 
-
     @Override
     public void onClick(View view) {
         MaterialButton button = (MaterialButton) view;
