@@ -5,7 +5,6 @@ public class MyData {
     private String name;
     private String address;
 
-
     public MyData(int id, String name, String address){
         this.name = name;
         this.address = address;
@@ -32,5 +31,4 @@ public class MyData {
     public void setAddress(String address) {
         this.address = address;
     }
-
 }

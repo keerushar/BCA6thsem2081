@@ -21,9 +21,9 @@ import com.acem.bca6thsem.helper.MyDbHelper;
 import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
-    private Activity context;
-    private ArrayList<MyData> data;
-    private MyDbHelper myDbHelper;
+    final private Activity context;
+    final private ArrayList<MyData> data;
+    final private MyDbHelper myDbHelper;
 
     public RecyclerViewAdapter(Activity context, ArrayList<MyData> data, MyDbHelper myDbHelper) {
         this.context = context;
@@ -131,7 +131,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             txtId = itemView.findViewById(R.id.idTv);
             txtName = itemView.findViewById(R.id.titleTv);
             txtAddress = itemView.findViewById(R.id.descTv);
-            deleteIv = itemView.findViewById(R.id.deleteIv);
+            deleteIv = itemView.findViewById(R.id.deleteIv); //Bind the delete imageview
             editIv = itemView.findViewById(R.id.editIv); // Bind the edit ImageView
         }
     }
