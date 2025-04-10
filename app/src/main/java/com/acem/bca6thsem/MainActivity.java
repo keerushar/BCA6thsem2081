@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
         LatLng kathmandu = new LatLng(27.7172, 85.3240);
         googleMap.addMarker(new MarkerOptions().position(kathmandu).title("Marker in Kathmandu"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(kathmandu, 10));
