@@ -44,6 +44,8 @@ public class MyDbHelper extends SQLiteOpenHelper {
             contentValues.put(COLUMN_ADDRESS, data.getAddress());
 
             db.insert(TABLE_NAME, null, contentValues);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 

@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     private void showAddItemDialog(ArrayList<MyData> data) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Add Items");
-        builder.setCancelable(true);
+        builder.setCancelable(false);
 
         // Inflate the custom dialog view
         LayoutInflater inflater = getLayoutInflater();
